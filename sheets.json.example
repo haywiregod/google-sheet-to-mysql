@@ -1,0 +1,25 @@
+[{
+    "spreadsheet_name": "Spread SHeet Name here",
+    "spreadsheet_id": "UNIQUE_GOOGLE_SHEET_ID_HERE",
+    "filename": "SHEET_FILENAME_TO_BE_SAVED_AS",
+    "should_download": true,
+    "move_to_sql": [{
+        "host": "DATABSE_HOST",
+        "database": "DATABSE_NAME",
+        "user": "DATABSE_USER",
+        "password": "DATABASE_PASSWORD",
+        "sheet_name": "SHEET_NAME_IN_GOOGLE_SPREADSHEET",
+        "table_name": "TABLE_NAME_IN_DATABSE",
+        "execute": true,
+        "truncate": true,
+        "consider_columns": {
+            "COLUMN_NUMBER_HERE": {
+                "target_column_name": "TABLE_COLUMN_NAME",
+                "unique": true
+            },
+            "COLUMN_NUMBER_HERE": {
+                "target_column_name": "TABLE_COLUMN_NAME"
+            }
+        }
+    }]
+}]
