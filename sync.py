@@ -29,11 +29,11 @@ def main():
             database = moveable_sheet['database']
             user = moveable_sheet['user']
             password = moveable_sheet['password']
-
+            truncate = moveable_sheet['truncate']
             prepared_sheet = wb.get_prepared_sheet(
                 sheet_name, consider_columns)
             wb.insert_into_table(host, database, user,
-                                 password, table_name, prepared_sheet, True)
+                                 password, table_name, prepared_sheet, truncate)
     logger.info('Exit Main')
 
 
