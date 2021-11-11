@@ -46,6 +46,10 @@ class SheetDownloader:
                 msg = 'new authentication'
                 print(msg)
                 logger.debug(msg)
+
+                self.gauth.GetFlow()
+                self.gauth.flow.params.update({'access_type': 'offline'})
+                self.gauth.flow.params.update({'approval_prompt': 'force'})
                 self.gauth.LocalWebserverAuth()
 
             elif self.gauth.access_token_expired:

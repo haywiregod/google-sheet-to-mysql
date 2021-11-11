@@ -8,6 +8,7 @@ from logger import logger
 class ExcelToSQL:
     def __init__(self, filename) -> None:
         self.wb = load_workbook(filename)
+        print(self.wb)
 
     def get_number_of_rows(self, sheet):
         nrows = sheet.max_row
