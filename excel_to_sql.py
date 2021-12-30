@@ -36,7 +36,7 @@ class ExcelToSQL:
         unique_columns = {}
         for column in available_columns:
             unique_columns[column] = []
-        for row in range(1, num_of_rows):
+        for row in range(1, num_of_rows+1):
             column_dict = {}
             for sheet_column, validations in consider_columns.items():
                 sheet_column = int(sheet_column)
