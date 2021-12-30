@@ -5,7 +5,7 @@ client_secrets.txt
 client_secrets.json
 credentials.json
 credentials.txt
-downloaded-spreadsheets/*
+downloaded-spreadsheets
 __pycache__
 *.egg-info
 *.pot
@@ -23,3 +23,4 @@ tests/report/
 .vscode/
 venv
 .env
+.pyc
